@@ -1,0 +1,55 @@
+/*ПЕРЕВАГИ*/
+.feature-list {
+  display: flex;
+}
+
+/*картинка*/
+.features-blok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background: $feature-icon-color;
+  .features-icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/*текст*/
+.feature-item {
+  width: calc((100% - 30px * 3) / 4);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+/*заголовки h3*/
+.title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.text {
+  color: $title-text-color;
+  line-height: 1.72;
+  margin-top: 0;
+}
+
+/*ЗАГОЛОВКИ h2*/
+.main-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}

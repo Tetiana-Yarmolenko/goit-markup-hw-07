@@ -1,0 +1,93 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+body {
+  --font-text: Roboto, sans-serif;
+  background: #ffffff;
+  color: var(--primeri-text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+/*ПРАВКИ*/
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hiden-main-title {
+  display: none;
+}
+
+address {
+  font-style: normal;
+  color: var(--primeri-white-color);
+}
+/*приховати текст*/
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+/*для фото*/
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+.box {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/*приховати текст*/
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+/*для фото*/
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-top: 0;
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}

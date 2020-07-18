@@ -1,0 +1,21 @@
+.logo {
+  font-family: $font-logo;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.193;
+  &-Web {
+    color: $akcent-color;
+  }
+
+  &-Studio {
+    color: $primeri-bleak-color;
+  }
+}
+
+.footer .logo-Studio {
+  color: #ffffff;
+}
+.footer-link .logo {
+  display: block;
+  margin-bottom: 20px;
+}
