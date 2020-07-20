@@ -1,0 +1,56 @@
+/*іконки соц. мереж*/
+.icon-title {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  color: $social-icon-color;
+
+  transition: background-color 250ms $timing-function,
+    color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $primary-white-color;
+    background-color: $akcent-color;
+  }
+}
+
+.icon-item:not(:last-child) {
+  margin-right: 10px;
+}
+// Розмір іконок
+.icon-socials {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+// Cтилі для іконок в футері
+.icon.footer {
+  color: $primary-white-color;
+  display: inline-flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+
+  transition: background-color 250ms timing-function;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: $akcent-color;
+  }
+}
+
+.icon.footer .icon-socials {
+  fill: currentColor;
+}

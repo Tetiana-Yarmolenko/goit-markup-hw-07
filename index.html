@@ -23,18 +23,24 @@
       <div class="conteiner">
         <nav class="container main-nav">
           <a class="logo" href="./index.html">
-            <span class="logo-Web">Web</span>
-            <span class="logo-Studio">Studio</span>
+            <span class="logo-web">Web</span>
+            <span class="logo-studio">Studio</span>
           </a>
           <ul class="site-nav list">
-            <li class="item"><a class="link currnet" href="">Студия</a></li>
-            <li class="item">
-              <a class="link" href="portfolio.html">Портфолио</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--currnet" href=""
+                >Студия</a
+              >
             </li>
-            <li class="item"><a class="link" href="">Контакты</a></li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Контакты</a>
+            </li>
           </ul>
           <ul class="auth-nav list">
-            <li class="item">
+            <li class="auth-nav__item">
               <a class="contacts-link" href="mailto:info@devstudio.com">
                 <svg class="icon-envelope">
                   <use href="./imeges/sprite.svg#icon-envelope"></use>
@@ -42,7 +48,7 @@
                 info@devstudio.com</a
               >
             </li>
-            <li class="item">
+            <li class="auth-nav__item">
               <a class="contacts-link" href="tel:+380961111111 ">
                 <svg class="icon-smartphone">
                   <use href="./imeges/sprite.svg#icon-smartphone"></use>
@@ -70,7 +76,7 @@
       <section class="section">
         <div class="container">
           <!--скрить h2-->
-          <h2 class="hiden-main-title">Преимущество</h2>
+          <h2 class="visually-hidden">Преимущество</h2>
           <ul class="feature-list list">
             <li class="feature-item">
               <div class="features-blok">
@@ -118,7 +124,6 @@
                 </svg>
               </div>
               <h3 class="title">Современные технологии</h3>
-              <p class="teхt"></p>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
@@ -150,17 +155,17 @@
         </div>
       </section>
       <!--Наша команда -->
-      <section class="section section-tiam">
+      <section class="section section-team">
         <div class="container">
           <h2 class="main-title">Наша команда</h2>
-          <ul class="tiam-list">
-            <li class="tiam-item">
+          <ul class="team__list">
+            <li class="team__item">
               <img
                 class="photo"
                 src="./imeges/photo1.jpg"
                 alt="photo Николай Кучеренко"
               />
-              <div class="tiam-card">
+              <div class="team-card">
                 <h3 class="name-title">Николай Кучеренко</h3>
                 <p class="prof-item">Product Designer</p>
                 <ul class="icon-title">
@@ -188,10 +193,7 @@
                   <li class="icon-item">
                     <a class="icon" href="" aria-label="Ссылка на LinkidIn">
                       <svg class="icon-socials">
-                        <use
-                          class="svg-social"
-                          href="./imeges/sprite.svg#icon-linkedin-1"
-                        ></use>
+                        <use href="./imeges/sprite.svg#icon-linkedin-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -199,13 +201,13 @@
               </div>
             </li>
 
-            <li class="tiam-item">
+            <li class="team__item">
               <img
                 class="photo"
                 src="./imeges/photo2.jpg"
                 alt="Ольга Иванова"
               />
-              <div class="tiam-card">
+              <div class="team-card">
                 <h3 class="name-title">Ольга Иванова</h3>
                 <p class="prof-item">Frontend Developer</p>
                 <ul class="icon-title">
@@ -240,13 +242,13 @@
                 </ul>
               </div>
             </li>
-            <li class="tiam-item">
+            <li class="team__item">
               <img
                 class="photo"
                 src="./imeges/photo3.jpg"
                 alt="photo Андрей Шевченко"
               />
-              <div class="tiam-card">
+              <div class="team-card">
                 <h3 class="name-title">Андрей Шевченко</h3>
                 <p class="prof-item">Marketing</p>
                 <ul class="icon-title">
@@ -281,13 +283,13 @@
                 </ul>
               </div>
             </li>
-            <li class="tiam-item">
+            <li class="team__item">
               <img
                 class="photo"
                 src="./imeges/photo4.jpg"
                 alt="photo Иван Николаев"
               />
-              <div class="tiam-card">
+              <div class="team-card">
                 <h3 class="name-title">Иван Николаев</h3>
                 <p class="prof-item">UI Designer</p>
                 <ul class="icon-title">
@@ -379,22 +381,22 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-link">
+        <div class="footer-block">
           <a href="./index.html" class="logo">
-            <span class="logo-Web">Web</span>
-            <span class="logo-Studio">Studio</span>
+            <span class="logo-web">Web</span>
+            <span class="logo-studio">Studio</span>
           </a>
           <!--Адреса i котакти-->
           <address>
-            <p class="aside">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="contacts-links">
+            <p class="adress">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="adress-list">
               <li class="adress item">
-                <a class="link-footer" href="mailto:info@example.com"
+                <a class="adress link" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li class="adress item">
-                <a class="link-footer" href="tel:+380991111111"
+                <a class="adress link" href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -402,7 +404,7 @@
           </address>
         </div>
         <!--Присоединяйтесь-->
-        <div class="social-link">
+        <div class="join-up">
           <p class="join-text">
             ПРИСОЕДИНЯЙТЕСЬ
           </p>
@@ -438,12 +440,13 @@
           </ul>
         </div>
         <!--Підписка-->
-        <div class="social-button">
+
+        <div class=".join-inform">
           <p class="join-text">Подпишитесь на рассылку</p>
           <form class="join-blok">
             <div class="form-field join">
               <input
-                class="join-input"
+                class="join-input footer"
                 type="email"
                 name="mail"
                 id="mail"
@@ -464,8 +467,8 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="form">
-          <button type="submit" class="closed">
-            <svg width="18" height="18" class="icon-close">
+          <button data-modal-close class="closed">
+            <svg class="icon-close">
               <use href="./imeges/sprite-modal.svg#icon-closed"></use>
             </svg>
           </button>
@@ -474,14 +477,14 @@
           <label class="form-field">
             <input type="text" name="name" class="form-input" placeholder=" " />
             <span class="form-labal">Имя</span>
-            <svg class="icon-modal">
+            <svg width="18" height="18" class="icon-modal">
               <use href="./imeges/sprite-modal.svg#icon-person"></use>
             </svg>
           </label>
           <label class="form-field">
             <input type="tel" name="tel" class="form-input" placeholder=" " />
             <span class="form-labal">Телефон</span>
-            <svg class="icon-modal">
+            <svg widht="18" height="18" class="icon-modal">
               <use href="./imeges/sprite-modal.svg#icon-phone"></use>
             </svg>
           </label>
@@ -493,7 +496,7 @@
               placeholder=" "
             />
             <span class="form-labal">Почта</span>
-            <svg class="icon-modal">
+            <svg widht="18" height="18" class="icon-modal">
               <use href="./imeges/sprite-modal.svg#icon-email"></use>
             </svg>
           </label>
@@ -505,11 +508,12 @@
               rows="10"
               cols="44"
               id="comment"
+              placeholder=" "
             ></textarea>
             <span class="form-labal comment">Коментарий</span></label
           >
 
-          <label class="checkbox-form">
+          <label name="checkup" class="checkbox-form">
             <input
               class="checkbox"
               type="checkbox"

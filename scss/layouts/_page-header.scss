@@ -1,0 +1,48 @@
+/*Шапка макета*/
+
+/*контейнер шапки*/
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/*"auth-nav*/
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav__item + .auth-nav__item {
+  margin-left: 30px;
+}
+
+/*контакты*/
+.contacts-link {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  &:hover,
+  &:focus {
+    color: $akcent-color;
+    fill: $akcent-color;
+  }
+}
+// Стилі для іконок
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  fill: currentColor;
+}

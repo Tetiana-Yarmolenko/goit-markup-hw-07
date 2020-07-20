@@ -1,13 +1,12 @@
 /*кнопка*/
-button {
-  font-family: Roboto, sans-serif;
-}
+
 .button {
   display: inline-block;
 
   font-family: inherit;
-  color: $primeri-white-color;
+  color: $primary-white-color;
   background-color: $akcent-color;
+
   padding: 10px 32px;
 
   font-weight: 700;
@@ -21,10 +20,14 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 1px solid transparent;
+  &:focus {
+    outline: none;
+  }
 }
-.button.primery {
-  padding: 10px 32px;
-}
+
+// .button.primery {
+//   padding: 10px 32px;
+// }
 .button.secondary {
   display: flex;
 }

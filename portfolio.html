@@ -12,49 +12,58 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <!--<link rel="stylesheet" href="./css/style.css" />-->
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
 
   <body>
     <!---Шапка-->
-    <header>
-      <nav class="container main-nav">
-        <a class="logo" href="./index.html">
-          <span class="logo-Web">Web</span>
-          <span class="logo-Studio">Studio</span>
-        </a>
-        <ul class="site-nav list">
-          <li class="item"><a class="link" href="./index.html">Студия</a></li>
-          <li class="item">
-            <a class="link currnet" href="portfolio.html">Портфолио</a>
-          </li>
-          <li class="item"><a class="link" href="">Контакты</a></li>
-        </ul>
-        <ul class="auth-nav list">
-          <li class="item">
-            <a class="contacts-link" href="mailto:info@devstudio.com">
-              <svg class="icon-envelope">
-                <use href="./imeges/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="item">
-            <a class="contacts-link" href="tel:+380961111111 ">
-              <svg class="icon-smartphone">
-                <use href="./imeges/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </nav>
+    <header class="site header">
+      <div class="conteiner">
+        <nav class="container main-nav">
+          <a class="logo" href="./index.html">
+            <span class="logo-web">Web</span>
+            <span class="logo-studio">Studio</span>
+          </a>
+
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Студия</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link currnet site-nav__link--currnet" href=""
+                >Портфолио</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="auth-nav list">
+            <li class="auth-nav__item">
+              <a class="contacts-link" href="mailto:info@devstudio.com">
+                <svg class="icon-envelope">
+                  <use href="./imeges/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="auth-nav__item">
+              <a class="contacts-link" href="tel:+380961111111 ">
+                <svg class="icon-smartphone">
+                  <use href="./imeges/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <!--Список фильтров-->
       <section class="section">
-        <h1 class="hiden-main-title">Список проектов</h1>
+        <h1 class="visually-hidden">Список проектов</h1>
         <div class="container portfolio">
           <button class="button-text" type="button">Все</button>
           <button class="button-text" type="button">Веб-сайты</button>
@@ -246,22 +255,22 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-link">
+        <div class="footer-block">
           <a href="./index.html" class="logo">
-            <span class="logo-Web">Web</span>
-            <span class="logo-Studio">Studio</span>
+            <span class="logo-web">Web</span>
+            <span class="logo-studio">Studio</span>
           </a>
           <!--Адреса i котакти-->
           <address>
-            <p class="aside">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="contacts-links">
+            <p class="adress">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="adress-list">
               <li class="adress item">
-                <a class="link-footer" href="mailto:info@example.com"
+                <a class="adress link" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li class="adress item">
-                <a class="link-footer" href="tel:+380991111111"
+                <a class="adress link" href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -269,7 +278,7 @@
           </address>
         </div>
         <!--Присоединяйтесь-->
-        <div class="social-link">
+        <div class="join-up">
           <p class="join-text">
             ПРИСОЕДИНЯЙТЕСЬ
           </p>
@@ -305,12 +314,12 @@
           </ul>
         </div>
         <!--Підписка-->
-        <div class="social-button">
+        <div class=".join-inform">
           <p class="join-text">Подпишитесь на рассылку</p>
           <form class="join-blok">
             <div class="form-field join">
               <input
-                class="join-input"
+                class="join-input footer"
                 type="email"
                 name="mail"
                 id="mail"

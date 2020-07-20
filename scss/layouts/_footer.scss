@@ -2,46 +2,28 @@
 .footer {
   background-color: #2f303a;
 }
-.footer .logo-Studio {
-  color: #ffffff;
-}
-.footer-link .logo {
-  display: block;
-  margin-bottom: 20px;
-}
 .footer > .container {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
+.footer .logo-studio {
+  color: $primary-white-color;
+}
 
-.footer-link {
+.footer-block {
   width: calc((50% - 45px) / 2);
   margin-right: 30px;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-/*Андреса*/
-.aside {
-  margin-bottom: 9px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  color: $primary-white-color;
-}
-/*Контакти*/
-.link-footer {
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 1.71;
-}
-
-.adress.item:not(:last-child) {
-  margin-bottom: 9px;
+  .logo {
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 /*Присоединяйтесь*/
-.social-link {
+.join-up {
   display: block;
   width: calc((50% - 45px) / 2);
   margin-right: 30px;
@@ -51,49 +33,31 @@
 .join-text {
   margin-bottom: 20px;
 
-  color: $primeri-white-color;
+  color: $primary-white-color;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 }
-.icon.footer {
-  color: $primeri-white-color;
-  display: inline-flex;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
 
-  transition: background-color 250ms $timing-function;
-}
-
-/*Ховер для іконок соц. мереж в футері*/
-.icon.footer:hover,
-.icon.footer:focus {
-  cursor: pointer;
-  background-color: $akcent-color;
-}
-.icon.footer .icon-socials {
-  fill: currentColor;
-}
 /*Підписка*/
-.social-button {
+.join-inform {
   width: calc(50% - 15px);
   padding-top: 72px;
   padding-bottom: 94px;
+  display: flex;
 }
-
+//іконка в кнопці
 .icon-send {
   display: inline-block;
   width: 24px;
   height: 24px;
   margin-left: 10px;
 }
-/*для вирывнювання в 1 ряд */
+/*для вирівнювання в 1 ряд форма + кнопка */
 .join-blok {
   display: flex;
 }
-
+// Форма в футері
 .form-field.join {
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -101,7 +65,8 @@
   border-radius: 4px;
   margin-right: 12px;
 }
-.join-blok .join-input {
+/*Поле вводу інформ*/
+.join-input.footer {
   background-color: #2f303a;
   min-width: 358px;
   height: 50px;

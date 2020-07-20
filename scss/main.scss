@@ -1,0 +1,21 @@
+@import "./utilis/varibles";
+@import "./utilis/mixin";
+
+@import "./base/styles";
+@import "./base/normalaize";
+
+@import "./components/logo";
+@import "./components/navigation";
+@import "./components/adress";
+@import "./components/button";
+@import "./components/social";
+@import "./components/form";
+@import "./components/modal";
+
+@import "./layouts/page-header";
+@import "./layouts/section-hero";
+@import "./layouts/section-feature";
+@import "./layouts/section-do";
+@import "./layouts/section-team";
+@import "./layouts/section-clients.";
+@import "./layouts/footer";

@@ -10,12 +10,11 @@ html {
   box-sizing: inherit;
 }
 body {
-  --font-text: Roboto, sans-serif;
-  background: #ffffff;
-  color: var(--primeri-text-color);
+  font-family: $font-text;
+  background: $primary-white-color;
+  color: $primary-text-color;
   font-style: normal;
   font-weight: 400;
-  font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -26,24 +25,9 @@ a {
   padding: 0;
 }
 
-.hiden-main-title {
-  display: none;
-}
-
 address {
   font-style: normal;
-  color: var(--primeri-white-color);
-}
-/*приховати текст*/
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
+  color: $primary-white-color;
 }
 /*для фото*/
 img {
@@ -71,23 +55,30 @@ ul {
   padding: 0;
   border: 0;
 }
-/*для фото*/
-img {
-  display: block;
-  min-width: 100%;
-  height: auto;
-}
+
+/*Стилі для секцій*/
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
   margin-top: 0;
   align-items: center;
 }
-
+// Стилі для контейнера
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+// Стилі для зоголовків
+/*ЗАГОЛОВКИ h2*/
+.main-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }

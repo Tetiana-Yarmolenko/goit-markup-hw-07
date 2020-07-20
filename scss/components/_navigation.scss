@@ -1,0 +1,42 @@
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $primary-bleak-color;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  &:hover,
+  &:focus {
+    color: $akcent-color;
+  }
+}
+
+.site-nav__link--currnet {
+  position: relative;
+  color: $akcent-color;
+
+  &:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $akcent-color;
+
+    transition: background-color 250ms $timing-function;
+    border-radius: 2px;
+  }
+}

@@ -1,0 +1,18 @@
+/*Андреса*/
+.adress {
+  margin-bottom: 9px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $primary-white-color;
+}
+/*Контакти*/
+.adress.link {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+}
+
+.adress.item:not(:last-child) {
+  margin-bottom: 9px;
+}

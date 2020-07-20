@@ -4,6 +4,13 @@
   display: flex;
   align-items: center;
 }
+.do-item {
+  position: relative;
+  width: calc((100% - 30px * 2) / 3);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 .do-title {
   padding: 27px;
   width: 100%;
@@ -11,7 +18,7 @@
   position: absolute;
   bottom: 0;
 
-  color: $primeri-white-color;
+  color: $primary-white-color;
   font-weight: 700;
   line-height: 1.14;
   text-align: center;
@@ -20,11 +27,4 @@
     rgba(47, 48, 58, 0.8),
     rgba(47, 48, 58, 0.8)
   );
-}
-.do-item {
-  position: relative;
-  width: calc((100% - 30px * 2) / 3);
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
 }

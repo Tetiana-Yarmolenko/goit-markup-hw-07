@@ -14,9 +14,7 @@
 }
 
 .clients-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredflex($type: flex);
   width: 100%;
   height: 100%;
   color: $social-icon-color;
