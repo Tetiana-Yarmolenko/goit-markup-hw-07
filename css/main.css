@@ -547,7 +547,7 @@ template {
 }
 
 /*іконки соц. мереж*/
-.icon-title {
+.socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -557,7 +557,11 @@ template {
   list-style: none;
 }
 
-.icon {
+.socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials__link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -576,23 +580,19 @@ template {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon:hover, .icon:focus {
+.socials__link:hover, .socials__link:focus {
   cursor: pointer;
   color: #ffffff;
   background-color: #2196f3;
 }
 
-.icon-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.icon-socials {
+.socials__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
 
-.icon.footer {
+.socials__link.footer {
   color: #ffffff;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -605,13 +605,9 @@ template {
   transition: background-color 250ms timing-function;
 }
 
-.icon.footer:hover, .icon.footer:focus {
+.socials__link.footer:hover, .socials__link.footer:focus {
   cursor: pointer;
   background-color: #2196f3;
-}
-
-.icon.footer .icon-socials {
-  fill: currentColor;
 }
 
 /* Форма для модального вікна*/
